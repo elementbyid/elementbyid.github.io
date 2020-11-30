@@ -20,7 +20,7 @@
 <li>Heap 영역 : 프로그램이 실행되는 동안 필요에 의해 동적으로 사요되는 메모리 영역으로 대표적으로 C언어의 malloc함수를 이용해 메모리를 할당한다면 이 영역에 할당되고 Java의 Object 타입들은 heap 영역에 생성된다.</li>
 <li>Stack 영역 : 프로그램이 자동으로 사용하는 임시 메모리 영역으로 지연벽수, 파라미터, 리턴 값 등 잠시 사용됐다가 사라지는 데이터를 저장하는 영역으로 함수 호출 시 생성되고 함수가 끝나면 반환된다. 예로 메서드 내에서 선언한 지역 변수는 Stack 영역에 저장되기 때문에 메서드가 끝날 때 함께 사라지므로 다른 메서드에서 호출 할 수 없다.</li>
 </ol>
-<h3 id="스레드"><a href="#스레드" class="headerlink" title="스레드"></a>스레드</h3><p><img src="/process.png" alt="프로세스에서 자원을 할당받은 스레드들 (이미지 출처: https://gmlwjd9405.github.io/2018/09/14/process-vs-thread.html)"></p>
+<h3 id="스레드"><a href="#스레드" class="headerlink" title="스레드"></a>스레드</h3><p><img src="process.png" alt="프로세스에서 자원을 할당받은 스레드들 (이미지 출처: https://gmlwjd9405.github.io/2018/09/14/process-vs-thread.html)"></p>
 <ul>
 <li>스레드는 프로세스 내부에 존재하고 Stack 영역만 각 스레드마다 독립적으로 할당 받고 그 외에 프로세스 영역에 있는 code, data, heap 영역은 프로세스 내에 있는 스레드 끼리 공유한다.</li>
 <li>때문에 한 스레드에서 공유된 영역의 자원을 수정한다면 다른 스레드에서 그 자원을 사용 할 때 변경된 자원을 사용하게 되고</li>
