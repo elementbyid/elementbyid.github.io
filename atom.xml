@@ -6,7 +6,7 @@
   <link href="https://jungguji.github.io/atom.xml" rel="self"/>
   
   <link href="https://jungguji.github.io/"/>
-  <updated>2021-01-02T06:54:05.000Z</updated>
+  <updated>2021-01-12T12:45:32.000Z</updated>
   <id>https://jungguji.github.io/</id>
   
   <author>
@@ -15,6 +15,32 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Junit4 설정 주입 에러</title>
+    <link href="https://jungguji.github.io/2021/01/12/Junit4-%EC%84%A4%EC%A0%95-%EC%A3%BC%EC%9E%85-%EC%97%90%EB%9F%AC/"/>
+    <id>https://jungguji.github.io/2021/01/12/Junit4-%EC%84%A4%EC%A0%95-%EC%A3%BC%EC%9E%85-%EC%97%90%EB%9F%AC/</id>
+    <published>2021-01-12T12:45:32.000Z</published>
+    <updated>2021-01-12T12:45:32.000Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="해결"><a href="#해결" class="headerlink" title="해결"></a>해결</h2><p>@Testpropertysource(classpath:””)로 test properties를 잡아주고<br>@Contextconfiguration(classes = { XXXConfig.class}) 로 Java config 파일들을 잡아준다.</p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h2 id=&quot;해결&quot;&gt;&lt;a href=&quot;#해결&quot; class=&quot;headerlink&quot; title=&quot;해결&quot;&gt;&lt;/a&gt;해결&lt;/h2&gt;&lt;p&gt;@Testpropertysource(classpath:””)로 test properties를 잡아주고&lt;br&gt;@Contextco</summary>
+      
+    
+    
+    
+    
+    <category term="Junit" scheme="https://jungguji.github.io/tags/Junit/"/>
+    
+    <category term="Test" scheme="https://jungguji.github.io/tags/Test/"/>
+    
+    <category term="Spring" scheme="https://jungguji.github.io/tags/Spring/"/>
+    
+  </entry>
   
   <entry>
     <title>Hexo blog backup 방법</title>
@@ -470,30 +496,6 @@
       
       
     <summary type="html">&lt;h2 id=&quot;문제&quot;&gt;&lt;a href=&quot;#문제&quot; class=&quot;headerlink&quot; title=&quot;문제&quot;&gt;&lt;/a&gt;문제&lt;/h2&gt;&lt;p&gt;&lt;a href=&quot;https://programmers.co.kr/learn/courses/30/lessons/17684&quot;&gt;htt</summary>
-      
-    
-    
-    
-    
-    <category term="알고리즘" scheme="https://jungguji.github.io/tags/%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98/"/>
-    
-    <category term="프로그래머스" scheme="https://jungguji.github.io/tags/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>프로그래머스: n진수 게임</title>
-    <link href="https://jungguji.github.io/2020/08/03/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4-n%EC%A7%84%EC%88%98-%EA%B2%8C%EC%9E%84/"/>
-    <id>https://jungguji.github.io/2020/08/03/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4-n%EC%A7%84%EC%88%98-%EA%B2%8C%EC%9E%84/</id>
-    <published>2020-08-03T08:03:33.000Z</published>
-    <updated>2020-11-03T08:14:35.481Z</updated>
-    
-    <content type="html"><![CDATA[<h2 id="문제"><a href="#문제" class="headerlink" title="문제"></a>문제</h2><p><a href="https://programmers.co.kr/learn/courses/30/lessons/17687">https://programmers.co.kr/learn/courses/30/lessons/17687</a></p><hr><h2 id="코드"><a href="#코드" class="headerlink" title="코드"></a>코드</h2><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">private</span> <span class="keyword">static</span> <span class="keyword">final</span> String[] ABCDEF = <span class="keyword">new</span> String[] &#123;<span class="string">&quot;A&quot;</span>,<span class="string">&quot;B&quot;</span>,<span class="string">&quot;C&quot;</span>,<span class="string">&quot;D&quot;</span>,<span class="string">&quot;E&quot;</span>,<span class="string">&quot;F&quot;</span>&#125;;</span><br><span class="line"><span class="function"><span class="keyword">public</span> String <span class="title">solution</span><span class="params">(<span class="keyword">int</span> n, <span class="keyword">int</span> t, <span class="keyword">int</span> m, <span class="keyword">int</span> p)</span> </span>&#123;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">int</span> limit = t * m;</span><br><span class="line">    String speakString = make(n, limit);</span><br><span class="line"></span><br><span class="line">    <span class="keyword">char</span>[] toChar = speakString.toCharArray();</span><br><span class="line"></span><br><span class="line">    StringBuilder answer = <span class="keyword">new</span> StringBuilder();</span><br><span class="line"></span><br><span class="line">    <span class="keyword">int</span> index = p - <span class="number">1</span>;</span><br><span class="line">    <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; t; i++) &#123;</span><br><span class="line">        answer.append(toChar[index]);</span><br><span class="line">        index += m;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">return</span> answer.toString();</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">public</span> String <span class="title">make</span><span class="params">(<span class="keyword">int</span> n, <span class="keyword">int</span> limit)</span> </span>&#123;</span><br><span class="line">    StringBuilder sb = <span class="keyword">new</span> StringBuilder().append(<span class="number">0</span>);</span><br><span class="line"></span><br><span class="line">    <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">1</span>; i &lt; limit; i++) &#123;</span><br><span class="line">        sb.append(changeDecimal(i, n));</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">return</span> sb.toString();</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">public</span> <span class="keyword">char</span>[] changeDecimal(<span class="keyword">int</span> currentNumber, <span class="keyword">int</span> n) &#123;</span><br><span class="line">    StringBuilder sb = <span class="keyword">new</span> StringBuilder();</span><br><span class="line">    <span class="keyword">while</span>(currentNumber &gt; <span class="number">0</span>) &#123;</span><br><span class="line">        <span class="keyword">int</span> remain = currentNumber % n;</span><br><span class="line">        sb.append(remain &gt;= <span class="number">10</span> ? ABCDEF[remain-<span class="number">10</span>] : remain);</span><br><span class="line">        currentNumber /= n;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">return</span> sb.reverse().toString().toCharArray();</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><hr><h2 id="흐름"><a href="#흐름" class="headerlink" title="흐름"></a>흐름</h2><ul><li>진법 n, 미리 구할 숫자의 갯수 t, 게임에 참가하는 인원 m, 튜브의 순서 p</li></ul><ol><li>미리 구할 숫자의 갯수와 참가 인원 수를 곱해서 구해야 할 수의 갯수를 구한다.</li><li>1부터 구해야 될 수까지 반복한다.</li><li>반복하면서 숫자를 진법으로 나눈 나머지를 구한다.</li><li>나머지가 10 이상이면 A, B, C … 으로 치환한다.</li><li>현재 수를 n 진법의 값만큼 나눈다.</li><li>작은 수부터 역순으로 저장되어야 하므로 reverse() 메서드로 역순으로 돌린다.</li><li>0부터 미리 구할 숫자 갯수만큼 반복하면서</li><li>n진법으로 치환한 문자열에서 참가인원 숫자만큼 더하면서 숫자를 뽑아 저장한다.</li><li>끝</li></ol><hr><h2 id="결과"><a href="#결과" class="headerlink" title="결과"></a>결과</h2><table><thead><tr><th>번호</th><th>속도</th></tr></thead><tbody><tr><td>테스트 1</td><td>통과 (0.87ms, 50.6MB)</td></tr><tr><td>테스트 2</td><td>통과 (1.15ms, 50.5MB)</td></tr><tr><td>테스트 3</td><td>통과 (1.02ms, 52MB)</td></tr><tr><td>테스트 4</td><td>통과 (1.07ms, 52.1MB)</td></tr><tr><td>테스트 5</td><td>통과 (4.60ms, 52.6MB)</td></tr><tr><td>테스트 6</td><td>통과 (4.40ms, 52.2MB)</td></tr><tr><td>테스트 7</td><td>통과 (4.55ms, 53MB)</td></tr><tr><td>테스트 8</td><td>통과 (2.62ms, 52.3MB)</td></tr><tr><td>테스트 9</td><td>통과 (2.45ms, 52.6MB)</td></tr><tr><td>테스트 10</td><td>통과 (2.57ms, 52.3MB)</td></tr><tr><td>테스트 11</td><td>통과 (2.49ms, 52MB)</td></tr><tr><td>테스트 12</td><td>통과 (2.45ms, 52.7MB)</td></tr><tr><td>테스트 13</td><td>통과 (5.32ms, 50.3MB)</td></tr><tr><td>테스트 14</td><td>통과 (69.61ms, 77.9MB)</td></tr><tr><td>테스트 15</td><td>통과 (75.19ms, 75.8MB)</td></tr><tr><td>테스트 16</td><td>통과 (70.55ms, 78.1MB)</td></tr><tr><td>테스트 17</td><td>통과 (17.09ms, 53.3MB)</td></tr><tr><td>테스트 18</td><td>통과 (15.42ms, 52.7MB)</td></tr><tr><td>테스트 19</td><td>통과 (6.46ms, 52.6MB)</td></tr><tr><td>테스트 20</td><td>통과 (13.17ms, 53MB)</td></tr><tr><td>테스트 21</td><td>통과 (29.51ms, 58.7MB)</td></tr><tr><td>테스트 22</td><td>통과 (21.20ms, 56.5MB)</td></tr><tr><td>테스트 23</td><td>통과 (41.04ms, 64.1MB)</td></tr><tr><td>테스트 24</td><td>통과 (59.00ms, 77.4MB)</td></tr><tr><td>테스트 25</td><td>통과 (74.66ms, 80MB)</td></tr><tr><td>테스트 26</td><td>통과 (24.89ms, 54.3MB)</td></tr></tbody></table><hr><h2 id="테스트-케이스"><a href="#테스트-케이스" class="headerlink" title="테스트 케이스"></a>테스트 케이스</h2><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">assertEquals(<span class="string">&quot;0111&quot;</span>, test.solution(<span class="number">2</span>,<span class="number">4</span>,<span class="number">2</span>,<span class="number">1</span>));</span><br><span class="line">assertEquals(<span class="string">&quot;02468ACE11111111&quot;</span>, test.solution(<span class="number">16</span>,<span class="number">16</span>,<span class="number">2</span>,<span class="number">1</span>));</span><br><span class="line">assertEquals(<span class="string">&quot;13579BDF01234567&quot;</span>, test.solution(<span class="number">16</span>,<span class="number">16</span>,<span class="number">2</span>,<span class="number">2</span>));</span><br></pre></td></tr></table></figure><h2 id="참고사이트"><a href="#참고사이트" class="headerlink" title="참고사이트"></a>참고사이트</h2><ul><li><a href="https://tech.kakao.com/2017/11/14/kakao-blind-recruitment-round-3/">https://tech.kakao.com/2017/11/14/kakao-blind-recruitment-round-3/</a></li></ul>]]></content>
-    
-    
-      
-      
-    <summary type="html">&lt;h2 id=&quot;문제&quot;&gt;&lt;a href=&quot;#문제&quot; class=&quot;headerlink&quot; title=&quot;문제&quot;&gt;&lt;/a&gt;문제&lt;/h2&gt;&lt;p&gt;&lt;a href=&quot;https://programmers.co.kr/learn/courses/30/lessons/17687&quot;&gt;htt</summary>
       
     
     
