@@ -23,12 +23,12 @@
     <published>2021-01-12T12:45:32.000Z</published>
     <updated>2021-01-12T12:45:32.000Z</updated>
     
-    <content type="html"><![CDATA[<h2 id="해결"><a href="#해결" class="headerlink" title="해결"></a>해결</h2><p>@Testpropertysource(classpath:””)로 test properties를 잡아주고<br>@Contextconfiguration(classes = { XXXConfig.class}) 로 Java config 파일들을 잡아준다.</p>]]></content>
+    <content type="html"><![CDATA[<h2 id="서론"><a href="#서론" class="headerlink" title="서론"></a>서론</h2><p>현재 작업 중인 프로젝트에서 테스트 코드를 작성해 테스트할 일이 있었는데 프로젝트의 환경은 spring 4.3에 Junit 4.8이었다.<br>이에 원래 사용하던 junit5로 넘어갈까 하였으나 junit5를 사용하려면 설정을 spring boot으로 해야 한다는 글들이 있어 같은 테스트 환경을 만들기 위해 junit만 4.12 버전으로 업그레이드한 후 테스트를 진행하였는데 spring 프로젝트지만 config 설정들을 boot 처럼 java 파일로 관리하는 형태여서 java 파일과 properties 파일을 동시에 잡아 줄 필요가 있었는데<br>@Contextconfiguration(classes = {블라블라…}, locations = {블라블라…})로 잡으니 에러가 발생하여 해결한 방법을 작성해놓는다.</p><h2 id="해결"><a href="#해결" class="headerlink" title="해결"></a>해결</h2><p>@Testpropertysource(classpath:””)로 test properties를 잡아주고<br>@Contextconfiguration(classes = { XXXConfig.class}) 로 Java config 파일들을 잡아준다.</p>]]></content>
     
     
       
       
-    <summary type="html">&lt;h2 id=&quot;해결&quot;&gt;&lt;a href=&quot;#해결&quot; class=&quot;headerlink&quot; title=&quot;해결&quot;&gt;&lt;/a&gt;해결&lt;/h2&gt;&lt;p&gt;@Testpropertysource(classpath:””)로 test properties를 잡아주고&lt;br&gt;@Contextco</summary>
+    <summary type="html">&lt;h2 id=&quot;서론&quot;&gt;&lt;a href=&quot;#서론&quot; class=&quot;headerlink&quot; title=&quot;서론&quot;&gt;&lt;/a&gt;서론&lt;/h2&gt;&lt;p&gt;현재 작업 중인 프로젝트에서 테스트 코드를 작성해 테스트할 일이 있었는데 프로젝트의 환경은 spring 4.3에 Junit 4</summary>
       
     
     
