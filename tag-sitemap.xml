@@ -3,6 +3,20 @@
 
 
     <url>
+        <loc>https://jungguji.github.io/tags/JPA/</loc>
+        <lastmod>2021-01-22T13:31:53.000Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>https://jungguji.github.io/tags/Junit/</loc>
+        <lastmod>2021-01-22T13:31:53.000Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
         <loc>https://jungguji.github.io/tags/Spring/</loc>
         <lastmod>2021-01-12T12:45:32.000Z</lastmod>
         <changefreq>weekly</changefreq>
@@ -11,13 +25,6 @@
 
     <url>
         <loc>https://jungguji.github.io/tags/Test/</loc>
-        <lastmod>2021-01-12T12:45:32.000Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>https://jungguji.github.io/tags/Junit/</loc>
         <lastmod>2021-01-12T12:45:32.000Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
@@ -123,13 +130,6 @@
 
     <url>
         <loc>https://jungguji.github.io/tags/JPQL/</loc>
-        <lastmod>2020-11-10T09:50:18.831Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>https://jungguji.github.io/tags/JPA/</loc>
         <lastmod>2020-11-10T09:50:18.831Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
